@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static('public'));
 app.use(morgan('dev'));
 app.use(express.json());
-app.use('/api', apiRouter);
+app.use(config.apiPrefix, apiRouter);
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, '../public/index.html')));
 
 app.listen(parseInt(config.port), () => console.log(`Server listening on port: ${config.port}`));

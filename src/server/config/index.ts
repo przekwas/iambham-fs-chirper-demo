@@ -9,5 +9,6 @@ export default {
         password: process.env.DB_PASS,
         database: process.env.DB_SCHEMA
     },
-    port: process.env.PORT
+    port: process.env.PORT,
+    apiPrefix: process.env.API_PREFIX
 }

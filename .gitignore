@@ -1,4 +1,9 @@
+# Dependencies
 node_modules/
+
+# Production Builds
 dist/
 public/js/app.js
-.env
+
+# DONT FORGET YOUR .env FILE!
+# I AM NOT INCLUDING SO YOU CAN SEE IT!!!

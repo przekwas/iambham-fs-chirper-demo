@@ -6,7 +6,7 @@ const pool = mysql.createPool(config.mysql);
 export const Query = <T = any>(query: string, values?: any) => {
 
     const sql = mysql.format(query, values);
-    console.log(sql);
+    console.log('\n' + sql + '\n');
 
     return new Promise<T>((resolve, reject) => {
         pool.query(sql, (err, results) => {
@@ -20,6 +20,8 @@ export const Query = <T = any>(query: string, values?: any) => {
 }
 
 import chirps from './queries/chirps';
+import users from './queries/users';
 export default {
-    chirps
+    chirps,
+    users
 }
