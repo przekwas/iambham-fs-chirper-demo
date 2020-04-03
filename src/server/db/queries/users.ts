@@ -1,5 +1,5 @@
 import { Query } from '../';
-import type { TUsers } from '../../utils/interfaces';
+import type { TUsers } from '../models';
 
 const all = () =>
 	Query<Array<TUsers>>(`

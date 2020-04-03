@@ -1,5 +1,5 @@
 import { Query } from '../';
-import type { TChirps, TUsers } from '../../utils/interfaces';
+import type { TChirps, TUsers } from '../models';
 
 const all = () =>
 	Query<Array<TChirps | TUsers>>(`

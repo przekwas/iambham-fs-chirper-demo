@@ -1,6 +1,10 @@
 import * as dotenv from 'dotenv';
 
-dotenv.config();
+const envFound = dotenv.config();
+
+if (!envFound) {
+    throw new Error('Cannot find .env file!');
+}
 
 export default {
     mysql: {
@@ -10,5 +14,8 @@ export default {
         database: process.env.DB_SCHEMA
     },
     port: process.env.PORT,
-    apiPrefix: process.env.API_PREFIX
+    apiPrefix: process.env.API_PREFIX,
+    logs: {
+        level: process.env.LOG_LEVEL
+    }
 }
