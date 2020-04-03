@@ -1,5 +1,37 @@
 $theme-colors: (
-    'primary': #0091ea //Covalence Blue!  :D
+	'primary': #0091ea,
+	//Covalence Blue!  :D
+		'secondary': #b967ff,
+	'info': #05ffa1,
+	'warning': #ff71ce
 );
+
+.cursor {
+	cursor: pointer;
+}
+
+.toasty-compose {
+	left: 475px;
+	top: 475px;
+}
+
+.toasty-edit {
+	left: 475px;
+	top: 390px;
+}
+
+#parent {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#child {
+	width: 100%;
+	height: 100%;
+	overflow-y: scroll;
+	padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+	box-sizing: content-box; /* So the width will be 100% + 17px */
+}
 
 @import '../../../node_modules/bootstrap/scss/bootstrap.scss';

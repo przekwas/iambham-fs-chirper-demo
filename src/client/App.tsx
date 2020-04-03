@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/common/Navbar';
 import Home from './views/Home';
 import Compose from './views/Compose';
 import Details from './views/Details';
 import Editing from './views/Editing';
 
-const App: React.FC<AppProps> = props => {
+const App: React.FC<AppProps> = () => {
 	return (
 		<BrowserRouter>
 			<Navbar />

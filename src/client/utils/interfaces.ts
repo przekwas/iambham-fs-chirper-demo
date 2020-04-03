@@ -5,3 +5,8 @@ export interface IChirp {
 	created_at: Date;
 	username: string;
 }
+
+export interface IUser {
+	id: number;
+	username: string;
+}

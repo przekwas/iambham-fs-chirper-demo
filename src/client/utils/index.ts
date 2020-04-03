@@ -24,5 +24,7 @@ type Headers = {
 };
 
 export * as chirpsService from './chirps-service';
-
+export * as usersService from './users-service';
 export * from './interfaces';
+export * from './pathing';
+export * from './validators';
